@@ -5,10 +5,24 @@
 @import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/mixins/";
 
-//XS media query
 
-@include media-breakpoint-up(xs){
+@media (min-width: TAMAÑO-EN-PÍXELES){
+    
+}
+
+@include media-breakpoint-down(lg){
+    body{
+        background-color: green;
+    }
+    //OTRO EJERCICIO
     .container-fluid{
-        background-color: red;
+        background-color: green;
     }
 }
+    
+@include media-breakpoint-up(lg){
+    .container-fluid{
+        background-color: pink;
+    }
+}
+    
